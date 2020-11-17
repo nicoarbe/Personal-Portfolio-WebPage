@@ -1,12 +1,23 @@
-header{
-    position: fixed;
-    display: flex;
-    
+body{
+    background-color: lightgray;
+}
+
+.welcome{
+    padding-top: 40vh;
 }
 
 #welcome-section{
     height: 100vh;
 }
+
+.btn{
+    display: inline-block;
+}
+
+.fab{
+    display: inline-block;
+}
+
 @media (max-width: 798px){
     body{
         background-color: gray;

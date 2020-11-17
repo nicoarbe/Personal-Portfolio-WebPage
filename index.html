@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,58 +13,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio WebPage</title>
 </head>
+
 <body>
     <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#welcome-section">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+        </div>
         </nav>
     </header>
-    <main>
-        <section id="welcome-section">
+    <main class="container text-center">
+        <section id="welcome-section" class="welcome">
             <h1>A L O H A, I'm Nicolás Arbeláez Ramírez</h1>
-            <h4>But just call me Nico</h3>
-            <p>a FrontEnd Junior Programmer Student</p>
+            <h4>But just call me Nico</h4>
+                <p>a FrontEnd Junior Programmer Student</p>
         </section>
-        <section id="projects">
-            <h3>Here you can find some of my projects</h2>
-                <article class="row">
-                    <div class="col-2"></div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./img/tributepage.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title project-tile">Tribute Page</h5>
-                              <a href="https://nicoarbe.github.io/Tribute-Page/" class="btn btn-primary"></a>
-                            </div>
+        <section id="projects" class="project border-top border-secondary py-5">
+            <article class="projectsti text-center mb-5">
+                <h2>Here you can find some of my projects</h2>
+            </article>
+            <article class="row justify-content-around">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="card text-center border-dark bg-secondary" style="width: 18rem;">
+                        <img src="./img/tributepage.png" class="card-img-top" alt="tribute page image">
+                        <div class="card-body">
+                            <h5 class="card-title project-tile">Tribute Page</h5>
+                            <a href="https://nicoarbe.github.io/Tribute-Page/" class="btn btn-dark btn-sm">¿Quieres ver
+                                más?</a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./img/calculator.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title project-title">JavaScript Calculator</h5>
-                              <a href="https://6ew0o.csb.app/" class="btn btn-primary"></a>
-                            </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-center border-dark bg-secondary" style="width: 18rem;">
+                        <img src="./img/calculator.png" class="card-img-top" alt="calculator image">
+                        <div class="card-body">
+                            <h5 class="card-title project-title">JavaScript Calculator</h5>
+                            <a href="https://6ew0o.csb.app/" class="btn btn-dark btn-sm">¿Quieres ver más?</a>
                         </div>
                     </div>
-                    <div class="col-2"></div>
-                </article>
+                </div>
+                <div class="col-2"></div>
+            </article>
         </section>
-        <section id="contact">
+        <section id="contact" class="contact border-top border-secondary mt-5 pt-5">
             <div>
-                <h2></h2>
-                <p></p>
+                <h2>Let's create a better world and help people</h2>
+                <p>Do you want to know how?</p>
             </div>
-            <div>
-                <a id="profile-link" href="https://github.com/nicoarbe" target="_blank"></a>
+            <div class="socialmedia text-dark">
+                <a id="profile-link" href="https://github.com/nicoarbe" target="_blank" class="btn contact-details"><i class="fab fa-github"></i>GitHub</a>
             </div>
-
+            <div class="socialmedia text-dark">
+                <a id="profile-link" href="https://twitter.com/nicoarbelaez" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i>Twitter</a>
+            </div>
+            <div class="socialmedia text-dark">
+                <a id="profile-link" href="mailto:nicoarbelaez@gmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at"></i>Email</a>
+            </div>
         </section>
     </main>
-    <footer>Designed and Created by Nicolás Arbeláez</footer>
+    <footer class="footer text-right mr-5 py-4">Designed and Created by Nicolás Arbeláez</footer>
 </body>
+
 </html>
